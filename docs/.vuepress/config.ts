@@ -468,6 +468,7 @@ function getSidebar(locale: string): SidebarOptions {
                     `${locale}/subquery_network/kepler/indexers/install-indexer-locally.md`,
                     `${locale}/subquery_network/kepler/indexers/install-indexer-linux.md`,
                     `${locale}/subquery_network/kepler/indexers/install-indexer-aws.md`,
+                    `${locale}/subquery_network/kepler/indexers/restore-projects.md`,
                     `${locale}/subquery_network/kepler/indexers/index-project.md`,
                     `${locale}/subquery_network/kepler/indexers/ssh-in-aws.md`,
                     `${locale}/subquery_network/kepler/indexers/troubleshooting-indexers.md`,

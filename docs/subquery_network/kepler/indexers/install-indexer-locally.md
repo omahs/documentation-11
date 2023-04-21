@@ -26,7 +26,7 @@ Now, let's explore how to run the Indexing Service Locally step-by-step.
 ```bash
 mkdir kepler
 cd kepler
-curl https://raw.githubusercontent.com/subquery/indexer-services/develop/docker-compose.yml -o docker-compose.yml
+curl https://raw.githubusercontent.com/subquery/indexer-services/kepler/docker-compose.yml -o docker-compose.yml
 ```
 
 ::: warning Important

@@ -20,15 +20,19 @@ The final code of this project can be found [here](https://github.com/subquery/c
 
 The `schema.graphql` file determines the shape of your data from SubQuery due to the mechanism of the GraphQL query language. Hence, updating the GraphQL Schema file is the perfect start. It allows you to define your end goal right at the start.
 
-Update the `schema.graphql` file as follows. The aim is to index all votes on the [Terra Developer Fund](https://daodao.zone/multisig/juno1lgnstas4ruflg0eta394y8epq67s4rzhg5anssz3rc5zwvjmmvcql6qps2).
+Update the `schema.graphql` file as follows. The aim is to index all transactions coming on the [SIENNA Single Staking contract](https://www.mintscan.io/secret/account/secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4). Since the Secret Network is focused on privacy, a lot of information regarding the nature of the transaction or the event is not available on the blockchain. In this schema, we will simply index the transactions as well as the transaction emitter.
 
 ```graphql
-type Vote @entity {
+type Transaction @entity {
   id: ID! # id field is always required and must look like this
-  blockHeight: BigInt!
-  voter: String! # The address that voted
-  proposalID: BigInt! # The proposal ID
-  vote: Boolean! # If they voted to support or reject the proposal
+  blockHeight: BigInt! 
+  timestamp: String!
+  from: User! # we are using a relationship 1 to 1 here making the "Transaction" entity connected to the "User" entity
+}
+
+type User @entity {
+  id: ID!
+  transactions: [Transaction] @derivedFrom(field:"from") #This allows us to make a reverse lookup on an entity to a relation
 }
 ```
 

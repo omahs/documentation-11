@@ -23,7 +23,7 @@ The `schema.graphql` file determines the shape of your data from SubQuery due to
 Update the `schema.graphql` file as follows. The aim is to index all transactions coming on the [SIENNA Single Staking contract](https://www.mintscan.io/secret/account/secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4). Since the Secret Network is focused on privacy, a lot of information regarding the nature of the transaction or the event is not available on the blockchain. In this schema, we will simply index the transactions as well as the transaction emitter.
 
 ```graphql
-type Transaction @entity {
+type Staking @entity {
   id: ID! # id field is always required and must look like this
   blockHeight: BigInt! 
   timestamp: String!
@@ -32,7 +32,7 @@ type Transaction @entity {
 
 type User @entity {
   id: ID!
-  transactions: [Transaction] @derivedFrom(field:"from") #This allows us to make a reverse lookup on an entity to a relation
+  transactions: [Staking] @derivedFrom(field:"from") #This allows us to make a reverse lookup on an entity to a relation
 }
 ```
 

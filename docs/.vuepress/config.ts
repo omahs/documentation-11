@@ -529,6 +529,7 @@ function getSidebar(locale: string): SidebarOptions {
                 `${locale}/subquery_network/kepler/indexers/troubleshooting-indexers.md`,
                 `${locale}/subquery_network/kepler/indexers/faqs-indexers.md`,
                 `${locale}/subquery_network/kepler/indexers/ssl-configuration.md`,
+                `${locale}/subquery_network/kepler/indexers/setting-up-payg.md`,
               ],
             },
             `${locale}/subquery_network/kepler/delegators.md`,

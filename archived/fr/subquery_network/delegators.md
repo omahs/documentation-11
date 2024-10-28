@@ -47,7 +47,7 @@ SubQuery will launch the official RI soon, but we expect other delegation applic
 
 Besides the period when Delegators can effectively earn money, a non-reward period also occurs. Delegators receive rewards for staking Eras that they were a part of for the entire duration. For example, if a Delegator joins a staking era halfway through, they will not earn any rewards for that particular era.
 
-Delegators can change the indexer that their SQT is delegated to (called redelegating), this change will be queued to happen automatically at the end of the the Era and no thawing period will occur.
+Delegators can change the indexer that their SQT is delegated to (called redelegating), this change will be queued to happen automatically at the end of the Era and no thawing period will occur.
 
 If a Delegator decides to undelegate their SQT, a 28 day thawing period starts. The tokens cannot be used during this period, no fees can be accrued or any reward gained.
 

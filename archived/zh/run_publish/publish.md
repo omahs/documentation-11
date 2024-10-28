@@ -228,7 +228,7 @@ $ subql deployment:deploy
 启动器项目，它将允许您自动发布并部署您的更改
 
 - 第 1 步：将您的项目推送到 GitHub 后，在 GitHub 上创建 `DEPLOYMENT` 环境，并添加秘钥 [SUBQL_ACCESS_TOKEN](../run_publish/ipfs.md#prepare-your-subql-access-token)
-- Step 2: Create a project on [SubQuery Managed Service](https://managedservice.subquery.network), this can be done using the the [UI](#using-the-ui) or [CLI](#using-the-cli).
+- Step 2: Create a project on [SubQuery Managed Service](https://managedservice.subquery.network), this can be done using the [UI](#using-the-ui) or [CLI](#using-the-cli).
 - Step 3: Once your project is created, navigate to the GitHub Actions page for your project, and select the workflow `CLI deploy`
 - Step 4: You'll see an input field where you can enter the unique code of your project created on SubQuery Projects, you can get the code from the URL in SubQuery's Managed Service [SubQuery Managed Service](https://managedservice.subquery.network). 代码基于您项目的名称, 其中空格被连线替换 `-`。 e.g. `my project name` becomes `my-project-name`
 - Once the workflow is complete, you should be see your project deployed to our Managed Service

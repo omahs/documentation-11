@@ -225,7 +225,7 @@ $ subql deployment:deploy
 With the introduction of the deployment feature for the CLI, we've added a **Default Action Workflow** to [the starter project in GitHub](https://github.com/subquery/subql-starter/blob/main/Polkadot/Polkadot-starter/.github/workflows/cli-deploy.yml) that will allow you to publish and deploy your changes automatically:
 
 - Step 1: After pushing your project to GitHub, create `DEPLOYMENT` environment on GitHub, and add the secret [SUBQL_ACCESS_TOKEN](../run_publish/ipfs.md#prepare-your-subql-access-token) to it.
-- Step 2: Create a project on [SubQuery Managed Service](https://managedservice.subquery.network), this can be done using the the [UI](#using-the-ui) or [CLI](#using-the-cli).
+- Step 2: Create a project on [SubQuery Managed Service](https://managedservice.subquery.network), this can be done using the [UI](#using-the-ui) or [CLI](#using-the-cli).
 - Step 3: Once your project is created, navigate to the GitHub Actions page for your project, and select the workflow `CLI deploy`
 - Step 4: You'll see an input field where you can enter the unique code of your project created on SubQuery Projects, you can get the code from the URL in SubQuery's Managed Service [SubQuery Managed Service](https://managedservice.subquery.network). The code is based on the name of your project, where spaces are replaced with hyphens `-`. e.g. `my project name` becomes `my-project-name`
 - Once the workflow is complete, you should be see your project deployed to our Managed Service

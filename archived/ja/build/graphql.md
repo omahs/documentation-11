@@ -241,7 +241,7 @@ JSON 型を使用することの欠点は、テキスト検索を行うたびに
 しかし、その影響はクエリサービスではまだ許容範囲内です。 ここでは、JSON フィールドの GraphQL クエリに `contains` 演算子を使用して、'0064'を含む電話番号を所有する最初の 5 人のユーザーを見つける方法の例を示します。
 
 ```graphql
-#To find the the first 5 users own phone numbers contains '0064'.
+#To find the first 5 users own phone numbers contains '0064'.
 
 query {
   user(first: 5, filter: { contactCard: { contains: [{ phone: "0064" }] } }) {

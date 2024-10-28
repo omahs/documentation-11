@@ -123,7 +123,7 @@ subql-node -f /example/subql-project reindex --targetHeight=30
 ```
 
 ::: tip Note
-Once the command is executed and the state has been rolled back the the specified height, the application will exit. You can then start up the indexer to proceed again from this height.
+Once the command is executed and the state has been rolled back to the specified height, the application will exit. You can then start up the indexer to proceed again from this height.
 :::
 
 ### force-clean
